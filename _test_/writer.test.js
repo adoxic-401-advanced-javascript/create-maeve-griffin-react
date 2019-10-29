@@ -1,12 +1,14 @@
-import { toBindingIdentifierName } from "@babel/types";
-
 const writer = jest.fn();
 
-describe('write fuction', () => {
-  writer(path, string)
+describe('write function', () => {
+  const string = 'a thing'
+  writer
     .mockReturnValue(string);
 
-  const actual = writer('./something.txt', 'a thing');
-  const expected = 'a thing';
-  expect(actual).toBe(expected);
+    it('should return a thing', () => {
+      const actual = writer();
+      const expected = 'a thing';
+      expect(actual).toBe(expected);
+    
+  });
 });
