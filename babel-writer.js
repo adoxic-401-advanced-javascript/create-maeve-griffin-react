@@ -1,4 +1,4 @@
-const { writer } = require('./writer');
+const writer = require('./writer');
 const chalk = require('chalk');
 const path = require('path');
 
@@ -6,8 +6,7 @@ const makeBabel = (toJoin) => {
   console.log(chalk.blue('setting up .babelrc'));
 
   const babel = 
-  `{
-    "presets": [
+  `{"presets": [
       "@babel/preset-env",
       "@babel/preset-react"
     ],

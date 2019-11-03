@@ -1,4 +1,4 @@
-const { writer } = require('./writer');
+const writer = require('./writer');
 const chalk = require('chalk');
 const path = require('path');
 
@@ -6,8 +6,7 @@ const makeEslint = (toJoin) => {
   console.log(chalk.magenta('setting up .eslint'));
 
   const Eslint = 
-  `{
-    "parserOptions": {
+  `{"parserOptions": {
       "ecmaVersion": 9,
       "sourceType": "module"
     },

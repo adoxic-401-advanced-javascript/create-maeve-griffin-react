@@ -1,14 +1,14 @@
-const { writer } = require('./writer');
+const writer = require('./writer');
 const chalk = require('chalk');
 const path = require('path');
 
 const makeWebpack = (toJoin) => {
   console.log(chalk.green('setting up webpack.config.js'));
 
-  const webpack = `
-  const HtmlPlugin = require('html-webpack-plugin');
+  const webpack = `const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+// eslint-disable-next-line
 module.exports = {
   entry: './src/index.js',
   output: {

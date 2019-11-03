@@ -1,12 +1,11 @@
-const { writer } = require('./writer');
+const writer = require('./writer');
 const chalk = require('chalk');
 const path = require('path');
 
 const makeSrcJS = (toJoin) => {
   console.log(chalk.red('setting up make src/index.js'));
 
-  const scrJS = `
-  import React from 'react';
+  const scrJS = `import React from 'react';
   import { render } from 'react-dom';
   import App from './components/App';
 

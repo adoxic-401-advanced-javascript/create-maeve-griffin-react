@@ -1,12 +1,11 @@
-const { writer } = require('./writer');
+const writer = require('./writer');
 const chalk = require('chalk');
 const path = require('path');
 
 const makePackageJSON = (toJoin) => {
   console.log(chalk.red('setting up package.json'));
 
-  const packageJSON = `{
-    "name": "create-maeve-griffin-react",
+  const packageJSON = `{"name": "create-maeve-griffin-react",
     "version": "1.0.0",
     "description": "",
     "main": "src/index.js",
@@ -23,6 +22,7 @@ const makePackageJSON = (toJoin) => {
       }
     },
     "scripts": {
+      "lint": "eslint '**/*.js'",
       "test": "jest --verbose",
       "test:watch": "npm run test -- --watch",
       "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",

@@ -1,4 +1,4 @@
-const { writer } = require('./writer');
+const writer = require('./writer');
 const chalk = require('chalk');
 const path = require('path');
 
@@ -10,6 +10,7 @@ const makeGitIgnore = (toJoin) => {
   .env
   temp
   build
+  node_modules
   
   # Created by https://www.gitignore.io/api/vim,osx,node,linux,windows
   ### Linux ###
