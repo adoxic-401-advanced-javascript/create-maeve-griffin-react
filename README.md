@@ -6,3 +6,4 @@ do not "npm i" this package instead use "npm init maeve-griffin-react"
 1.1.6 Added one line git ignore to webpack writer.
 1.1.7 fixed import writer bug.
 1.1.8 gitignore fix.
+1.1.9 added redux fixed eslint setup in package json writer.

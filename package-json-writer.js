@@ -22,7 +22,7 @@ const makePackageJSON = (toJoin) => {
       }
     },
     "scripts": {
-      "lint": "eslint '**/*.js'",
+      "lint": "eslint .",
       "test": "jest --verbose",
       "test:watch": "npm run test -- --watch",
       "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",

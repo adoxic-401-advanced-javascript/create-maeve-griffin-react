@@ -6,7 +6,7 @@ const makeBabel = require('./babel-writer');
 const makeWebpack = require('./webpack-writer');
 const makeTravis = require('./travis-writer');
 const makeGitIgnore = require('./gitignore-writer');
-const { makeSrcHTML, makeSrcJS } = require('./src-index-writer');
+const { makeSrcHTML, makeSrcJS, makeSrcCss, makeSrcTest } = require('./src-index-writer');
 const { dependencies, devDependencies } = require('./installer');
 const fs = require('fs');
 
@@ -22,6 +22,8 @@ makeTravis(base);
 makeGitIgnore(base);
 makeSrcJS(base);
 makeSrcHTML(base);
+makeSrcCss(base);
+makeSrcTest(base);
 dependencies(base);
 devDependencies(base);
 

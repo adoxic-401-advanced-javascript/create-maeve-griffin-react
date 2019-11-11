@@ -32,6 +32,7 @@ const devDependencies = (path) => {
     "css-loader",
     "dotenv-webpack",
     "eslint",
+    "eslint-plugin-react",
     "eslint-plugin-babel",
     "file-loader",
     "html-webpack-plugin",
@@ -43,7 +44,8 @@ const devDependencies = (path) => {
     "url-loader",
     "webpack",
     "webpack-cli",
-    "webpack-dev-server"
+    "webpack-dev-server",
+    
   ];
   installer(path, devArr, true);
 }
@@ -51,7 +53,9 @@ const devDependencies = (path) => {
 const dependencies = (path) => {
   const pend = [
     "react",
-    "react-dom"
+    "react-dom",
+    "redux",
+    "react-redux"
   ];
   installer(path, pend, false);
 }
